@@ -1,0 +1,26 @@
+
+name: Github actions
+
+on: push
+
+jobs:
+
+    build:
+        name: Build project
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Build project"
+
+    test:
+        needs: build
+        name: Test Project
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Build project"
+
+   
+
+
+
+
+
