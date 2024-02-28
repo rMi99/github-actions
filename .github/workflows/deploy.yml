@@ -6,21 +6,19 @@ on: push
 jobs:
 
     build:
-        name: Build project
+        name: Build
         runs-on: ubuntu-latest
         steps:
             - run: echo "Build project"
 
     test:
         needs: build
-        name: Test Project
+        name: Test
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Build project"
+            - run: echo "Test project"
 
    
-
-
 
 
 
