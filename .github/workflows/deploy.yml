@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo ${{ secrets.TEST_KEY }}
-            - run: echo ${{ env.TEST_KEY }}
+            - run: echo $TEST_KEY
 
     test:
         needs: build
