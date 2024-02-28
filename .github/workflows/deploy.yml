@@ -9,7 +9,7 @@ jobs:
         name: Build
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Build project"
+            - run: echo ${{ secrets.TEST_KEY }}
 
     test:
         needs: build
