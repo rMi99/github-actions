@@ -1,0 +1,31 @@
+
+name: Github actions
+
+on: push
+
+jobs:
+
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo ${{ secrets.TEST_KEY }}
+            - run: echo ${{ vars.TEST_KEY }}
+
+    test:
+        needs: build
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Test project"
+
+    deploy:
+        needs: test
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Deploy project"
+   
+
+
+
