@@ -13,17 +13,17 @@ git submodule status
 
 
 # composer install
-composer install --no-dev
+#composer install --no-dev
 
 # run migrate
-php artisan migrate --force
+#php artisan migrate --force
 
 
 #install npm & build
 
-npm install
+#npm install
 
-npm run build
+#npm run build
 
 
 
